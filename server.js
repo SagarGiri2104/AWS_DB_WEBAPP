@@ -32,6 +32,6 @@ app.use(express.static(__dirname + '/public'));
 
 //configures the nodejs app
 //const port = process.env.PORT || 1337;
-app.listen(8181);
+app.listen(8080);
 
 //console.log("Server running at http://localhost:%d", port);

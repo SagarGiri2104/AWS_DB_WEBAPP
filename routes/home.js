@@ -15,11 +15,11 @@ var fs = require("fs");
 // });
 
 router.get('/', function(req, res, next) {
-    res.sendFile(path.join(__dirname + '/../public/views/main.html'));
+    res.sendFile(path.join(__dirname + '/../public/views/quiz3.html'));
 });
 
 router.get('/home', function(req, res, next) {
-    res.sendFile(path.join(__dirname + '/../public/views/main.html'));
+    res.sendFile(path.join(__dirname + '/../public/views/quiz3.html'));
 });
 
 // router.get("/student", (req, res) => {

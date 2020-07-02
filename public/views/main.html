@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="earthApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type='text/css' href="../stylesheets/style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <!-- load angular -->
+    <script src="../javascripts/earthController.js"></script>
+
+</head>
+
+<body ng-controller="earthController">
+    <div class="container">
+        <table>
+            <tr>
+                <td><label for="quakes1">Latitude Input range</label></td>
+                <td><label for="quakes2">From</label></td>
+                <td><input type="text" name="ip1" id="ip1" placeholder="input 1" ng-model="input1"></input></td>
+                <td><label for="quakes2">To</label></td>
+                <td><input type="text" name="ip2" id="ip2" placeholder="input 2" ng-model="input2"></input></td>
+                <td><label for="quakes3">Number of times</label></td>
+                <td><input type="text" name="ip2" id="ip2" placeholder="input 3" ng-model="input3" value="1000"></input></td>
+                <tr>
+                <td><button type="button" id="getBigQuakes1" ng-click="Submit1()">Display Pie chart</button></td>
+                <td><button type="button" id="getBigQuakes2" ng-click="Submit2()">Get Result with restricted queries from cache</button></td>
+                </tr>
+           
+
+            </tr>
+        </table>
+    </div>
+   <div id="charts"></div>
+
+    </body>
+    </html>
+    

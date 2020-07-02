@@ -15,7 +15,7 @@ var fs = require("fs");
 
 
 router.get('/', function(req, res, next) {
-    res.sendFile(path.join(__dirname + '/../public/quiz3.html'));
+    res.sendFile(path.join(__dirname + '/../public/views/quiz5.html'));
 });
 
 // router.get('/', function(req, res, next) {

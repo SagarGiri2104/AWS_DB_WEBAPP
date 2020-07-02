@@ -156,9 +156,9 @@ myApp.controller('quiz3Controller', function($scope, $http) {
         $scope.db =false;
         $scope.outputData1 = "";
         $http({
-            method: 'GET',
+            method: 'POST',
             url: '/quiz3/getQuakes1',
-            params: {lat_first: input1,lat_second:  input2,country: input3}
+            data: {lat_first: input1,lat_second:  input2,country: input3}
     
         }).then(function(response) {
               // var opdata = [];

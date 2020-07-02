@@ -7,6 +7,8 @@ const azureDbconnect = require("./azureDb");
 
 //above are all import statements
 
+var quiz5Routes = require("./routes/aws_sql_query");
+
 var eqRoutes = require("./routes/eq");
 var index = require("./routes/home");
 var earthRoutes = require("./routes/earth");
@@ -30,6 +32,6 @@ app.use(express.static(__dirname + '/public'));
 
 //configures the nodejs app
 //const port = process.env.PORT || 1337;
-app.listen(8080);
+app.listen(8181);
 
 //console.log("Server running at http://localhost:%d", port);

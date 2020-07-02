@@ -48,12 +48,12 @@ router.get("/getCount", (req, res) => {
     
 });
 
-router.get("/getQuakes1", (req, res) => {
+router.post("/getQuakes1", (req, res) => {
     console.log("request received : " + req.query);
     //var range = req.query.range;
-    var lowerLimit = req.query.lat_first
-    var upperLimit = req.query.lat_second;
-    var country = req.query.country
+    var lowerLimit = req.body.lat_first
+    var upperLimit = req.body.lat_second;
+    var country = req.body.country
     var start  = Date.now();
     var sql  = `SELECT Smokers,year from c
     where Entity = '${country}' and year between ${lowerLimit} and ${upperLimit} ;`

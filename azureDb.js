@@ -5,13 +5,14 @@ const { Connection, Request } = require("tedious");
 const config = {
     authentication: {
         options: {
-            userName: "sagar6582", // update me
-            password: "Ocean@2012",
+            userName: "admin", // update me
+            password: "qwertyjkl",
+            port:"1433"
             // update me
         },
         type: "default"
     },
-    server: "earthquakes01.database.windows.net",
+    server: "database-3.ccqmamrug85r.us-east-2.rds.amazonaws.com",
     pool: {
         idleTimeoutMillis: 32000
         //max: 100
@@ -19,7 +20,7 @@ const config = {
     stream: true,
     parseJSON: true, // update me
     options: {
-        database: "Assignment2", //update me
+        database: "awsdb", //update me
         encrypt: true,
         rowCollectionOnRequestCompletion: true,
         useColumnNames: true
@@ -35,6 +36,7 @@ connection.on("connect", err => {
     if (err) {
         console.error(err.message);
     } else {
+        console.log("connected");
         //queryDatabase();
     }
 });

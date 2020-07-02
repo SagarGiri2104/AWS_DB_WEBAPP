@@ -49,7 +49,7 @@ router.get("/getCount", (req, res) => {
 });
 
 router.post("/getQuakes1", (req, res) => {
-    console.log("request received : " + req.query);
+    console.log("request received : " + req.body.lat_first);
     //var range = req.query.range;
     var lowerLimit = req.body.lat_first
     var upperLimit = req.body.lat_second;

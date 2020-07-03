@@ -1,0 +1,22 @@
+version: 0.0
+ 
+os: linux
+ 
+files:
+
+- source: /server.js
+ 
+- source: /package.json
+ 
+hooks:
+
+ 
+AfterInstall:
+ 
+timeout: 300
+ 
+runas: root
+
+
+
+

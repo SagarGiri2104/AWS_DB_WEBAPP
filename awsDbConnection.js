@@ -5,9 +5,9 @@ const { Connection, Request } = require("tedious");
 const config = {
     authentication: {
         options: {
-            userName: "admin", // update me
-            password: "qwertyjkl",
-            port:"1433"
+            userName: "enter_username", // update me
+            password: "enter_password",
+            port:"enter_port"
             // update me
         },
         type: "default"

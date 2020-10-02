@@ -9,21 +9,21 @@ const azureDbconnect = require("./azureDb");
 
 ///var quiz5Routes = require("./routes/aws_sql_query");
 
-var eqRoutes = require("./routes/eq");
+var route0 = require("./routes/eq");
 var index = require("./routes/home");
-var earthRoutes = require("./routes/earth");
-var quakeRoutes = require("./routes/quake");
-var quiz3Routes = require("./routes/quiz3");
+var route1 = require("./routes/earth");
+var route2 = require("./routes/quake");
+var route3 = require("./routes/quiz3");
 //create express app
 var app = express();
 
 //app.use('/', express.static('/home/site/wwwroot', options));
 app.use(bodyParser.json());
 app.use("/", index);
-app.use("/eq", eqRoutes);
-app.use("/earth", earthRoutes);
-app.use("/quake", quakeRoutes);
-app.use("/quiz3", quiz3Routes);
+app.use("/eq", route0);
+app.use("/earth", route1);
+app.use("/quake", route2);
+app.use("/quiz3", route3);
 
 
 app.set('view engine', 'html');

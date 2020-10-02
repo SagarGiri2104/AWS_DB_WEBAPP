@@ -1,5 +1,5 @@
 {
-    "redisHost": "redis-10965.c53.west-us.azure.cloud.redislabs.com",
-    "redisPort": 10965,
-    "redisKey": "Ocean@2012"
+    "redisHost": "enter.your.redis.host",
+    "redisPort": 00000,
+    "redisKey": "enter your redis key"
   }
